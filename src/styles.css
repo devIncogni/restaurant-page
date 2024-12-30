@@ -92,6 +92,13 @@ body {
     background: #828C51;
 }
 
+.footer {
+    padding: 0.5rem;
+    background: #828C51;
+    /* font-size: 0.85rem; */
+    text-align: center;
+}
+
 /* #endregion UNIVERSAL BODY STYLING */
 
 /* #region HEADER/NAVBAR STYLING */
