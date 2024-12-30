@@ -17,11 +17,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.\html$/i,
+        test: /\.(html|htm)$/i,
         use: "html-loader",
       },
       {
-        test: /.\css$/i,
+        test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
       {
