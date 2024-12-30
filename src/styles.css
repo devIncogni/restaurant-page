@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Noto-Sans";
+    src: url(./NotoSans-VariableFont_wdth\,wght.ttf);
+    font-display: swap;
+}
+
 /* #region CSS RESET by JOSH W COMEAU*/
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -77,10 +83,51 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    font-family: "Noto-Sans", sans-serif;
 }
 
 #content {
     flex: 1;
+    background: #828C51;
 }
 
 /* #endregion UNIVERSAL BODY STYLING */
+
+/* #region HEADER/NAVBAR STYLING */
+
+header {
+    background: #828C51;
+}
+
+nav {
+    margin: auto;
+    margin-top: 1rem;
+    /* border: 1px solid black; */
+
+    width: clamp(500px, 32rem, 50%);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav>button {
+    padding: 1rem 2rem;
+
+    border: none;
+    border-radius: 0.25rem;
+    background-color: brown;
+    color: #F6F7EB;
+
+    cursor: pointer;
+}
+
+nav>button:hover {
+    background-color: #6d1a1a;
+}
+
+nav>button:active {
+    background-color: brown;
+}
+
+/* #endregion HEADER/NAVBAR STYLING */
