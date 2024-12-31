@@ -110,6 +110,7 @@ header {
 nav {
     margin: auto;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     /* border: 1px solid black; */
 
     width: clamp(500px, 32rem, 50%);
@@ -138,3 +139,19 @@ nav>button:active {
 }
 
 /* #endregion HEADER/NAVBAR STYLING */
+
+/* #region CONTENT styling */
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+.holder {
+    margin: auto;
+    background-color: #F6F7EB;
+    width: clamp(500px, 50%, 35rem);
+
+    flex: 1;
+}
+
+/* #endregion CONTENT styling */
