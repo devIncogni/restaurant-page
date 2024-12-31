@@ -123,11 +123,13 @@ nav>button {
     padding: 1rem 2rem;
 
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
     background-color: brown;
     color: #F6F7EB;
 
     cursor: pointer;
+
+    transition: all ease 200ms;
 }
 
 nav>button:hover {
@@ -136,6 +138,7 @@ nav>button:hover {
 
 nav>button:active {
     background-color: brown;
+    transition: all 0ms;
 }
 
 /* #endregion HEADER/NAVBAR STYLING */
@@ -152,6 +155,22 @@ nav>button:active {
     width: clamp(500px, 50%, 35rem);
 
     flex: 1;
+    border-radius: 0.75rem;
+
+    box-shadow: 0 0 10px -2px black;
 }
 
 /* #endregion CONTENT styling */
+
+/* #region FOOTER styling */
+
+
+.footer{
+
+    z-index: -1;
+    color: #ffffff;
+    text-shadow: 0 0 3px black;
+}
+
+/* #endregion FOOTER styling */
+
