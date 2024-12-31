@@ -1,0 +1,30 @@
+.home-heading {
+    text-align: center;
+}
+
+.home-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-table {
+    border-collapse: collapse;
+}
+
+.home-table caption {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.home-table td,
+.home-table th {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid #555;
+}
+
+.home-table tr:nth-child(even) {
+    background: #ccc;
+}

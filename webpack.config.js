@@ -29,7 +29,7 @@ module.exports = {
         use: "asset/resource",
       },
       {
-        test: /\.()$/i,
+        test: /\.(ttf)$/i,
         use: "asset/resource",
       },
     ],
