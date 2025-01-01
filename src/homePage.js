@@ -1,4 +1,4 @@
-function createHome() {
+function createHome(parentElement) {
   const homeHeadingDiv = document.createElement("div");
   const homeInfoDiv = document.createElement("div");
 
@@ -16,11 +16,19 @@ function createHome() {
   );
 
   homeInfoDiv.appendChild(createTable());
+
+  parentElement.textContent = "";
+
+  parentElement.appendChild(homeHeadingDiv);
+  parentElement.appendChild(homeInfoDiv);
 }
 
 function createTable() {
   const table = document.createElement("table");
+  const tbody = document.createElement("tbody");
   table.setAttribute("class", "home-table");
+
+  table.appendChild(createElementAndSetTextContent("caption", "Schedule"));
 
   let tableRow = new Array(8);
 
@@ -38,8 +46,9 @@ function createTable() {
         createElementAndSetTextContent("td", "Morning 10 AM to Evening 10 PM")
       );
     }
-    table.appendChild(tableRow[i]);
+    tbody.appendChild(tableRow[i]);
   }
+  table.appendChild(tbody);
 
   return table;
 }
