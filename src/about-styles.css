@@ -1,0 +1,35 @@
+.about-para-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-info>h1 {
+    text-align: center;
+}
+
+.about-para-container>p:nth-child(1) {
+    text-align: center;
+    font-style: italic;
+}
+
+ul.why-choose-us {
+    list-style: none;
+    overflow: auto;
+}
+
+ul.why-choose-us>li:nth-child(2) {
+    list-style: "☕   ";
+}
+
+ul.why-choose-us>li:nth-child(3) {
+    list-style: "💻   ";
+}
+
+ul.why-choose-us>li:nth-child(4) {
+    list-style: "🤝   ";
+}
+
+ul.why-choose-us>li:nth-child(5) {
+    list-style: "📚   ";
+}
